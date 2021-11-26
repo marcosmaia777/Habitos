@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Hábitos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="contato.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="imagens/cerebro lampada.png"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main>
+            <form>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Marcos Maia">
+        
+                <label for="email">Email</label>
+                <input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required maxlength="11" placeholder="(XX) XXXXX-XXXX">
+        
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea required>
+            
+                
+             <div>
+                <p>Como prefere nosso contato?</p>
+                <label for="radio-email">
+                <input type="radio" name="contato" value="Email" id="radio-email">Email</label>
+
+                <label for="radio-telefone">
+                <input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone</label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                    WhatsApp
+                </label>
+             </div>
+
+            <div>
+                <p>Qual horário prefere ser atendido?</p>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+                <input type="submit" value="Enviar formulário" class="enviar-formulario">
+            
+        </form>
+                
+    </main>
+
+        <footer>
+            <img src="imagens/cerebro lampada.png">
+            <p class="copyright">&copy; Copyright - Hábitos</p>
+        </footer>
+    </body>
+</html>
